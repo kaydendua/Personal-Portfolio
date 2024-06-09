@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import icon from "../assets/icon.jpg";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const location = useLocation();
+
+  const handleLinkClick = (link) => {
+    if (location.pathname !== link) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   const links = [
     {
@@ -32,7 +39,12 @@ const NavBar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
           >
-            <Link to={link} smooth duration={500}>
+            <Link
+              to={link}
+              smooth
+              duration={500}
+              onClick={() => handleLinkClick(link)}
+            >
               {text}
             </Link>
           </li>
@@ -53,7 +65,12 @@ const NavBar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
-              <Link to={link} smooth duration={500}>
+              <Link
+                to={link}
+                smooth
+                duration={500}
+                onClick={() => handleLinkClick(link)}
+              >
                 {text}
               </Link>
             </li>

@@ -14,7 +14,7 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-3">
-          Hi! I'm <b>Kayden Dua</b>, a 16 year-old student at the
+          Hi! I'm <b>Kayden Dua</b>, a 16 year-old student at the{" "}
           <b>School of Science and Technology, Singapore</b>. I am passionate
           about coding, and I like finding creative solutions to challenging
           problems. Besides programming, I am also interested in{" "}

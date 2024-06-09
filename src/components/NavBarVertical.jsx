@@ -58,18 +58,6 @@ const NavBarVertical = () => {
         </>
       ),
       to: "projects",
-    },
-    {
-      id: 5,
-      child: (
-        <>
-          <div className="flex items-center justify-between w-full">
-            <span className="ml-2 select-none">Contact</span>
-            <FaEnvelopeOpen size={30} />
-          </div>
-        </>
-      ),
-      to: "contact",
       style: "rounded-br-md",
     },
   ];

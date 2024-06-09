@@ -8,8 +8,8 @@ import {
   FaArrowRight,
   FaLaptopCode,
   FaYoutube,
-  FaRandom,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
   const allProjects = [
@@ -45,8 +45,9 @@ const Projects = () => {
       src: Portfolio,
       name: "Personal Portfolio",
       description:
-        "This is a portfolio website built using React and Tailwind CSS. It was first made using a youtube tutorial, which is linked to the youtube button, and then further customized and expanded upon to fit my preferences.",
+        "This is a portfolio website built using React and Tailwind CSS, and deployed using Vercel. It was first made using a youtube tutorial, which is linked to the youtube button, and then further customized and expanded upon to fit my preferences.",
       tags: ["React Js, Tailwind CSS, 2024"],
+      github: "https://github.com/kaydendua/Personal-Portfolio",
       youtube: "https://www.youtube.com/watch?v=LpZrAjU6Hhk",
     },
   ];
@@ -61,6 +62,13 @@ const Projects = () => {
   const shuffleProjects = () => {
     const shuffledProjects = allProjects.sort(() => Math.random() - 0.5);
     setProjects(shuffledProjects.slice(0, 2));
+  };
+
+  const navigate = useNavigate();
+
+  const handleSeeMoreClick = () => {
+    navigate("/projects");
+    window.scrollTo(0, 0); // Scroll to the top of the page
   };
 
   return (
@@ -122,16 +130,6 @@ const Projects = () => {
                         <FaGithub size={20} />
                       </a>
                     )}
-                    {demo && (
-                      <a
-                        href={demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-gray-700 p-2 rounded-full hover:bg-gray-600 transition-colors duration-300"
-                      >
-                        <FaLaptopCode size={20} />
-                      </a>
-                    )}
                     {youtube && (
                       <a
                         href={youtube}
@@ -142,6 +140,16 @@ const Projects = () => {
                         <FaYoutube size={20} />
                       </a>
                     )}
+                    {demo && (
+                      <a
+                        href={demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-700 p-2 rounded-full hover:bg-gray-600 transition-colors duration-300"
+                      >
+                        <FaLaptopCode size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -150,7 +158,10 @@ const Projects = () => {
         </div>
 
         <div className="flex justify-center mt-8 space-x-4">
-          <button className="px-5 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:scale-110 duration-300 flex items-center">
+          <button
+            onClick={handleSeeMoreClick}
+            className="px-5 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:scale-110 duration-300 flex items-center"
+          >
             See More <FaArrowRight className="ml-2" />
           </button>
         </div>

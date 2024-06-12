@@ -68,7 +68,7 @@ const Projects = () => {
 
   const handleSeeMoreClick = () => {
     navigate("/projects");
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -99,10 +99,10 @@ const Projects = () => {
                 <img
                   src={src}
                   alt={name}
-                  className="w-1/3 h-auto rounded-l-lg object-cover"
+                  className="w-1/3 h-auto rounded-l-lg object-cover md:block hidden"
                 />
                 <div
-                  className={`w-2/3 p-4 relative ${
+                  className={`w-full md:w-2/3 p-4 relative ${
                     index % 2 === 0 ? "text-left" : "text-right"
                   }`}
                 >

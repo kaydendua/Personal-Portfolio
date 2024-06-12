@@ -3,8 +3,10 @@ import Skills from "./components/Skills";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 import NavBarVertical from "./components/NavBarVertical";
 import ProjectsPage from "./components/ProjectsPage";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
                 <About />
                 <Skills />
                 <Projects />
+                <Experience />
               </div>
             }
           />

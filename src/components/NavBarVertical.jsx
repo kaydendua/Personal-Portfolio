@@ -4,7 +4,7 @@ import {
   FaUserAlt,
   FaFolderOpen,
   FaLaptopCode,
-  FaEnvelopeOpen,
+  FaClipboardList,
 } from "react-icons/fa";
 import { Link } from "react-scroll";
 
@@ -58,6 +58,18 @@ const NavBarVertical = () => {
         </>
       ),
       to: "projects",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          <div className="flex items-center justify-between w-full">
+            <span className="ml-1 select-none text-[15px]">Experience</span>
+            <FaClipboardList size={30} />
+          </div>
+        </>
+      ),
+      to: "experience",
       style: "rounded-br-md",
     },
   ];

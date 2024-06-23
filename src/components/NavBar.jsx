@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaHome, FaFolder } from "react-icons/fa";
+import { FaBars, FaTimes, FaHome, FaFolder, FaCalendar } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import icon from "../assets/icon.jpg";
 
@@ -26,6 +26,12 @@ const NavBar = () => {
       text: "Projects",
       link: "/projects",
       icon: <FaFolder className="inline-block mr-2" />,
+    },
+    {
+      id: 3,
+      text: "Experiences",
+      link: "/experience",
+      icon: <FaCalendar className="inline-block mr-2" />,
     },
   ];
 

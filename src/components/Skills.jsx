@@ -11,6 +11,7 @@ import macos from "../assets/apple.png";
 
 const Skills = () => {
   const [selectedType, setSelectedType] = useState("Language");
+  const [hoveredTech, setHoveredTech] = useState(null);
 
   const techs = [
     {
@@ -19,6 +20,7 @@ const Skills = () => {
       title: "Python",
       style: "shadow-yellow-300",
       type: "Language",
+      hoverText: "Intermediate/Advanced",
     },
     {
       id: 2,
@@ -26,6 +28,7 @@ const Skills = () => {
       title: "React",
       style: "shadow-sky-600",
       type: "Language",
+      hoverText: "Beginner",
     },
     {
       id: 3,
@@ -33,6 +36,7 @@ const Skills = () => {
       title: "Tailwind",
       style: "shadow-sky-400",
       type: "Language",
+      hoverText: "Beginner",
     },
     {
       id: 4,
@@ -40,6 +44,7 @@ const Skills = () => {
       title: "GitHub",
       style: "shadow-gray-400",
       type: "Software",
+      hoverText: "Link at home section",
     },
     {
       id: 5,
@@ -47,6 +52,7 @@ const Skills = () => {
       title: "Visual Studio Code",
       style: "shadow-cyan-500",
       type: "Software",
+      hoverText: "Most code, except Python",
     },
     {
       id: 6,
@@ -54,6 +60,7 @@ const Skills = () => {
       title: "Figma",
       style: "shadow-rose-500",
       type: "Software",
+      hoverText: "UI design",
     },
     {
       id: 7,
@@ -61,6 +68,7 @@ const Skills = () => {
       title: "Davinci Resolve",
       style: "shadow-sky-800",
       type: "Software",
+      hoverText: "Video editing",
     },
     {
       id: 8,
@@ -68,6 +76,7 @@ const Skills = () => {
       title: "MacOS",
       style: "shadow-gray-400",
       type: "Software",
+      hoverText: "I don't have windows",
     },
   ];
 
@@ -113,13 +122,19 @@ const Skills = () => {
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {filteredTechs.map(({ id, src, title, style }) => (
+          {filteredTechs.map(({ id, src, title, style, hoverText }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} relative group`}
+              onMouseEnter={() => setHoveredTech({ src, title, hoverText })}
+              onMouseLeave={() => setHoveredTech(null)}
             >
               <img src={src} alt={title} className="w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
+              <p className="mt-4">
+                {hoveredTech && hoveredTech.src === src
+                  ? hoveredTech.hoverText
+                  : title}
+              </p>
             </div>
           ))}
         </div>

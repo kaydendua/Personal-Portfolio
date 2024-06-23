@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import NavBarVertical from "./components/NavBarVertical";
 import ProjectsPage from "./components/ProjectsPage";
+import ExperiencePage from "./components/ExperiencePage";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -29,6 +30,7 @@ function App() {
             }
           />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
         </Routes>
       </div>
     </Router>

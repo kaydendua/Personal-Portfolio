@@ -46,7 +46,7 @@ const Experience = () => {
       company: "Singapore University of Technology and Design",
       date: "January 2024",
       description:
-        "I participated in this 3 day camp where my group had to make a prototype product. The theme was assistive technology, and my group created a cup holder that would prevent cups from spilling in order to help people with shaky hands. We had to overcome many challenges to finish the product, such as the short 3-day time peoriod, and the unreliability of the 3D printers we were using. In the end, we were successful and won the innovative creator award.",
+        "I participated in this 3-day camp where my group had to make a prototype product. The theme was assistive technology, and my group created a cup holder that would prevent cups from spilling in order to help people with shaky hands, which won us the innovative creator award.",
     },
     {
       id: 3,
@@ -55,7 +55,7 @@ const Experience = () => {
       company: "Tribe",
       date: "November 2023",
       description:
-        "As part of the IDP Structured Work Attachment and Research Programme, I was given the opportunity to job shadow at Tribe. During my time there, I gained an intimate understanding of the inner workings at a startup, and learnt more about Web3 and StackUp. I was assigned to research on developer communities in the Asia-Pacific region, and presented my findings to them. Overall, It was an eye-opening experience that I am grateful for.",
+        "As part of the IDP Structured Work Attachment and Research Programme, I was given the opportunity to job shadow at Tribe. During my time there, I gained an intimate understanding of the inner workings at a startup, and learnt more about Web3 and StackUp. It was an eye-opening experience that I am grateful for.",
     },
     {
       id: 1,

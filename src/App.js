@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import NavBarVertical from "./components/NavBarVertical";
 import ProjectsPage from "./components/ProjectsPage";
 import ExperiencePage from "./components/ExperiencePage";
+import Contact from "./components/Contact";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -26,6 +27,7 @@ function App() {
                 <Skills />
                 <Projects />
                 <Experience />
+                <Contact />
               </div>
             }
           />

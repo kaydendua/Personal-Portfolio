@@ -10,11 +10,29 @@ import SUTDCamp3 from "../assets/experiences/SUTDCamp3.jpg";
 import SUTDCamp4 from "../assets/experiences/SUTDCamp4.jpg";
 import Sieberrsec1 from "../assets/experiences/Sieberrsec1.jpg";
 import Sieberrsec2 from "../assets/experiences/Sieberrsec2.png";
+import Technopreneurship1 from "../assets/experiences/Technopreneurship1.jpeg";
+import Technopreneurship2 from "../assets/experiences/Technopreneurship2.jpeg";
+import Technopreneurship3 from "../assets/experiences/Technopreneurship3.jpg";
+import ARTC1 from "../assets/experiences/ARTC1.png";
+import ARTC2 from "../assets/experiences/ARTC2.png";
+import ARTC3 from "../assets/experiences/ARTC3.png";
+import ARTC4 from "../assets/experiences/ARTC4.png";
+import ARTC5 from "../assets/experiences/ARTC5.png";
+import ARTC6 from "../assets/experiences/ARTC6.png";
 
 const ExperiencePage = () => {
   const experiences = [
     {
       id: 1,
+      title: "SMU-SST Technopreneurship Programme",
+      company: "Singapore Management University",
+      date: "March 2024 - June 2024",
+      description:
+        "As part of a collaboration between SMU and SST, I was part of a technopreneurship workship culminating in a two-day hackathon. Throughout the workshop, conducted by several technopreneurs from successful startups, I learnt a lot about technopreneurship and what its like. What I found especially insightful was a session where we had a dialogue with the technopreneurs. They answered many of our questions, giving us thoughtful advice. The hackathon was a fun and challenging experience, as we had to develop a product within the short timeframe. I learnt about the many considerations when developing a product, and the importance of a business plan.",
+      images: [Technopreneurship1, Technopreneurship2, Technopreneurship3],
+    },
+    {
+      id: 2,
       title: "HCI Sieberrsec CTF",
       company: "Hwa Chong Institution",
       date: "March 2024",
@@ -23,7 +41,7 @@ const ExperiencePage = () => {
       images: [Sieberrsec1, Sieberrsec2],
     },
     {
-      id: 2,
+      id: 3,
       title: "SST-SUTD Big D Camp",
       company: "Singapore University of Technology and Design",
       date: "January 2024",
@@ -32,13 +50,22 @@ const ExperiencePage = () => {
       images: [SUTDCamp1, SUTDCamp2, SUTDCamp3, SUTDCamp4],
     },
     {
-      id: 3,
+      id: 4,
       title: "Tribe Work Attachment",
       company: "Tribe",
       date: "November 2023",
       description:
-        "As part of the IDP Structured Work Attachment and Research Programme, I was given the opportunity to job shadow at Tribe. During my time there, I gained an intimate understanding of the inner workings at a startup, and learnt more about Web3 and StackUp. I was assigned to research on developer communities in the Asia-Pacific region, and presented my findings to them. Overall, It was an eye-opening experience that I am grateful for.",
+        "As part of the IDP Structured Work Attachment and Research Programme, I was given the opportunity to job shadow at Tribe. During my time there, I gained an intimate understanding of the inner workings at a startup, and learnt more about Web3 and StackUp. I was assigned to research on developer communities in the Asia-Pacific region, and to write a report and give a presentation about my findings. Overall, It was an eye-opening experience that I am grateful for.",
       images: [TribeGroupPhoto1, TribeGroupPhoto2, TribePresentation],
+    },
+    {
+      id: 5,
+      title: "ARTC-SST Innovation Camp",
+      company: "ARTC",
+      date: "May 2023 - June 2023",
+      description:
+        "I participated in a 3-day camp where my group had to create a prototype product. My group created an automatic plastic bottle cleaning device to prevent contamination of recycling bins. To prepare us for the camp, we went on several learning journeys, such as going to carousell and A*STAR and listening to various talks. In order to create the prototype, I had to learn how to work with arduino. It was a fun experience and I learnt a lot.",
+      images: [ARTC1, ARTC2, ARTC3, ARTC4, ARTC5, ARTC6],
     },
   ];
 

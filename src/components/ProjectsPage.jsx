@@ -72,7 +72,7 @@ const Projects = () => {
       name="projects"
       className="bg-gradient-to-b from-black via-gray-800 to-black w-full text-white min-h-screen pb-20"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full pt-28">
+      <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full pt-28">
         <div className="pb-8 text-center">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects

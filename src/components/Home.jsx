@@ -10,7 +10,7 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full px-4 md:flex-row-reverse">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row-reverse">
         <div className="flex flex-col justify-center h-full">
           <h1 className="text-4xl sm:text-7xl font-bold text-white">
             Hi! I'm Kayden Dua!
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex justify-center md:w-1/2 order-first mb-8 md:mb-0">
+        <div className="flex justify-center md:w-1/2 order-first pt-24 md:pt-0">
           <img
             src={Image}
             alt="my profile"

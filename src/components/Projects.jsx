@@ -99,7 +99,9 @@ const Projects = () => {
                 <img
                   src={src}
                   alt={name}
-                  className="w-1/3 h-auto rounded-l-lg object-cover md:block hidden"
+                  className={`w-1/3 h-auto object-cover md:block hidden ${
+                    index % 2 === 0 ? "rounded-l-lg" : "rounded-r-lg"
+                  }`}
                 />
                 <div
                   className={`w-full md:w-2/3 p-4 relative ${

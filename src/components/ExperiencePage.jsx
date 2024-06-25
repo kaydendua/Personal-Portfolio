@@ -3,6 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import TribeGroupPhoto1 from "../assets/experiences/TribeGroupPhoto1.jpg";
 import TribeGroupPhoto2 from "../assets/experiences/TribeGroupPhoto2.jpg";
+import TribeGroupPhoto3 from "../assets/experiences/TribeGroupPhoto3.png";
 import TribePresentation from "../assets/experiences/TribePresentation.jpg";
 import SUTDCamp1 from "../assets/experiences/SUTDCamp1.jpg";
 import SUTDCamp2 from "../assets/experiences/SUTDCamp2.jpg";
@@ -56,7 +57,12 @@ const ExperiencePage = () => {
       date: "November 2023",
       description:
         "As part of the IDP Structured Work Attachment and Research Programme, I was given the opportunity to job shadow at Tribe. During my time there, I gained an intimate understanding of the inner workings at a startup, and learnt more about Web3 and StackUp. I was assigned to research on developer communities in the Asia-Pacific region, and to write a report and give a presentation about my findings. Overall, It was an eye-opening experience that I am grateful for.",
-      images: [TribeGroupPhoto1, TribeGroupPhoto2, TribePresentation],
+      images: [
+        TribeGroupPhoto1,
+        TribeGroupPhoto2,
+        TribeGroupPhoto3,
+        TribePresentation,
+      ],
     },
     {
       id: 5,
@@ -72,7 +78,7 @@ const ExperiencePage = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-black via-gray-800 to-black w-full text-white pt-20 flex justify-center"
+      className="bg-gradient-to-b from-black via-gray-800 to-black w-full text-white pt-20 flex justify-center min-h-screen"
     >
       <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 text-center">
